@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="grid">
+        <div class="sidebar">
+            <div class="logo-text">
+                <span class="material-symbols-outlined board-icon">grid_view</span>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="list-container">
+                <div class="list-items">
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">home</span>
+                        <p><span>Home</span></p>
+                    </div>
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">patient_list</span>
+                        <p><span>Profile</span></p>
+                    </div>
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">mode_comment</span>
+                        <p><span>Messages</span></p>
+                    </div>
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <p><span>History</span></p>
+                    </div>
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">file_copy</span>
+                        <p><span>Task</span></p>
+                    </div>
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">groups</span>
+                        <p><span>Communities</span></p>
+                    </div>
+                </div>
+                <div class="list-items">
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">settings</span>
+                        <p><span>Settings</span></p>
+                    </div>
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">mobile_question</span>
+                        <p><span>Support</span></p>
+                    </div>
+                    <div class="icon-items">
+                        <span class="material-symbols-outlined">verified_user</span>
+                        <p><span>Privacy</span></p>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="nav">
+                <div class="header">
+                    <span class="material-symbols-outlined search">search</span>
+                    <input class="input" type="text">
+                    <span class="material-symbols-outlined notification">notifications_active</span>
+                    <img class="userpic" src="data:image/png;base64,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" alt="">
+                    <h5 class="username">Morgan Oakley</h5>
+                </div>
+                <div class="menu">
+                    <div class="greetings">
+                        <img class="userpic" src="data:image/png;base64,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" alt="">
+                        <div class="welcome">
+                            <p>Hi there,</p>
+                            <h4>Morgan Oakley (@morgan)</h4>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="project">
+                    <h4>Your Projects</h4>
+                    <div class="cards">
+                        <div class="cards-left">
+                            <div class="card">
+                                <h6>Super Cool Project</h6>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
+                                <div class="icons">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <span class="material-symbols-outlined">network_node</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h6>Super Cool Project</h6>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
+                                <div class="icons">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <span class="material-symbols-outlined">network_node</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h6>Super Cool Project</h6>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
+                                <div class="icons">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <span class="material-symbols-outlined">network_node</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards-right">
+                            <div class="card">
+                                <h6>Super Cool Project</h6>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
+                                <div class="icons">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <span class="material-symbols-outlined">network_node</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h6>Super Cool Project</h6>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
+                                <div class="icons">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <span class="material-symbols-outlined">network_node</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h6>Super Cool Project</h6>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis fells accumsan nec.</p>
+                                <div class="icons">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">visibility</span>
+                                    <span class="material-symbols-outlined">network_node</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ann-trend">
+                    <div class="ann">
+                        <h4>Announcements</h4>
+                        <div class="ann-card">
+                            <div class="ann-text">
+                                <h6>Site Maintenance</h6>
+                                <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="ann-text">
+                                <h6>Community Share Day</h6>
+                                <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="ann-text">
+                                <h6>Updated Privacy Policy</h6>
+                                <p>Phasellus efficitur nisi eget elit consecteturm egrt condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                    </div> 
+                    <div class="trend">
+                        <h4>Trending</h4>
+                        <div class="trend-card">
+                            <div class="trend-image-text">
+                                <img class="trendpic" src="data:image/png;base64,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" alt="">
+                                <div class="trend-text">
+                                    <h6>@tegan</h6>
+                                    <p>World Peace Builder</p>
+                                </div>    
+                            </div>
+                            <div class="trend-image-text">
+                                <img class="trendpic" src="data:image/png;base64,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" alt="">
+                                <div class="trend-text">
+                                    <h6>@tegan</h6>
+                                    <p>World Peace Builder</p>
+                                </div>    
+                            </div>
+                            <div class="trend-image-text">
+                                <img class="trendpic" src="data:image/png;base64,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" alt="">
+                                <div class="trend-text">
+                                    <h6>@tegan</h6>
+                                    <p>World Peace Builder</p>
+                                </div>    
+                            </div>
+                            <div class="trend-image-text">
+                                <img class="trendpic" src="data:image/png;base64,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" alt="">
+                                <div class="trend-text">
+                                    <h6>@tegan</h6>
+                                    <p>No</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
